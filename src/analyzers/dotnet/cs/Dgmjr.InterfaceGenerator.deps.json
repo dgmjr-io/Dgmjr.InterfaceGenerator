@@ -12,8 +12,8 @@
           "Dgmjr.CodeGeneration.Constants-Scriban.Bundled": "0.0.1-Local",
           "GitInfo": "2.3.0",
           "Microsoft.Build.Tasks.Git": "1.1.1",
-          "Microsoft.CSharp": "4.5.0",
-          "Microsoft.CodeAnalysis.Analyzers": "3.3.3",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "Microsoft.CodeAnalysis.CSharp": "4.4.0",
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.4.0",
           "Microsoft.CodeAnalysis.Common": "4.4.0",
@@ -56,10 +56,10 @@
         }
       },
       "Microsoft.Build.Tasks.Git/1.1.1": {},
-      "Microsoft.CodeAnalysis.Analyzers/3.3.3": {},
+      "Microsoft.CodeAnalysis.Analyzers/3.3.4": {},
       "Microsoft.CodeAnalysis.Common/4.4.0": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Analyzers": "3.3.3",
+          "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "System.Collections.Immutable": "6.0.0",
           "System.Memory": "4.5.5",
           "System.Reflection.Metadata": "5.0.0",
@@ -278,11 +278,11 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.CSharp.dll": {
-            "assemblyVersion": "4.0.4.0",
-            "fileVersion": "4.6.26515.6"
+            "assemblyVersion": "4.0.5.0",
+            "fileVersion": "4.700.19.56404"
           }
         }
       },
@@ -504,7 +504,7 @@
     "Dgmjr.CodeGeneration.Constants-Scriban.Bundled/0.0.1-Local": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-9tGLSYivHUU7Cb7pYNnLRa7rjJMVs8M8x4J0mwmKrqhBxIPZz3AnGcVdTo7AxZDdJSd+3AZLbI1O+4cXUB+NwQ==",
+      "sha512": "sha512-czKHGoCjn5K88i/5T4AJ+qOEA7qy8Zqn8h8l63X9bDluEJqPEmlmhdGAN4Ckz3K3zwg4pFvq6jMqUp7ia7M4HQ==",
       "path": "dgmjr.codegeneration.constants-scriban.bundled/0.0.1-local",
       "hashPath": "dgmjr.codegeneration.constants-scriban.bundled.0.0.1-local.nupkg.sha512"
     },
@@ -536,12 +536,12 @@
       "path": "microsoft.build.tasks.git/1.1.1",
       "hashPath": "microsoft.build.tasks.git.1.1.1.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Analyzers/3.3.3": {
+    "Microsoft.CodeAnalysis.Analyzers/3.3.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-j/rOZtLMVJjrfLRlAMckJLPW/1rze9MT1yfWqSIbUPGRu1m1P0fuo9PmqapwsmePfGB5PJrudQLvmUOAMF0DqQ==",
-      "path": "microsoft.codeanalysis.analyzers/3.3.3",
-      "hashPath": "microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512"
+      "sha512": "sha512-AxkxcPR+rheX0SmvpLVIGLhOUXAKG56a64kV9VQZ4y9gR9ZmPXnqZvHJnmwLSwzrEP6junUF11vuc+aqo5r68g==",
+      "path": "microsoft.codeanalysis.analyzers/3.3.4",
+      "hashPath": "microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Common/4.4.0": {
       "type": "package",
@@ -571,12 +571,12 @@
       "path": "microsoft.codeanalysis.workspaces.common/4.4.0",
       "hashPath": "microsoft.codeanalysis.workspaces.common.4.4.0.nupkg.sha512"
     },
-    "Microsoft.CSharp/4.5.0": {
+    "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
-      "path": "microsoft.csharp/4.5.0",
-      "hashPath": "microsoft.csharp.4.5.0.nupkg.sha512"
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

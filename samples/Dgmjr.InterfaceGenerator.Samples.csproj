@@ -17,7 +17,8 @@
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.EntityFrameworkCore" />
-        <PackageReference Include="System.Threading.Tasks.Extensions" VersionOverride="4.5.4" />
-        <PackageReference Include="Dgmjr.InterfaceGenerator" IncludeAssets="Analyzers" ExcludeAssets="Compile; ContentFiles; Lib; Native" PrivateAssets="All" />
+        <PackageReference Include="System.Text.Json.Usings" />
+        <!-- <PackageReference Include="System.Threading.Tasks.Extensions" VersoinOverride="4.5.4" /> -->
+        <SourceGenerator  Include="Dgmjr.InterfaceGenerator" />
     </ItemGroup>
 </Project>

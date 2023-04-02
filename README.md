@@ -1,8 +1,8 @@
 ---
-author: David G. Moore, Jr.
-author_email: david@dgmjr.io
+authors:
+  - dgmjr
 title: README.md
-lastmod: 2023-03-24-05:58:52
+lastmod: 2023-04-02T03:05:33.549Z
 created: 2023-03-24-05:58:52
 license: MIT
 keywords:

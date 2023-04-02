@@ -62,7 +62,7 @@ public partial class EnumerationClassGenerator : IIncrementalGenerator
             var classToGenerateTheInterfaceFor = attributeData.ConstructorArguments.First().Value as INamedTypeSymbol;
             context.AddSource(interfaceName + ".g.cs",
             InterfaceDeclarationTemplate.Render(new InterfaceGeneratorModel(interfaceNamespace, interfaceName,
-                Join(System.Environment.NewLine,
+                Join("\r\n",
                     classToGenerateTheInterfaceFor
                     .GetMembers()
                     .Where(member => member.Kind is SymbolKind.Property)
@@ -70,7 +70,7 @@ public partial class EnumerationClassGenerator : IIncrementalGenerator
                     .Where(p => p.DeclaredAccessibility == Accessibility.Public)
                     .Select(p =>
                         PropertyDeclarationTemplate.Render(new PropertyDeclarationModel("public", p.Type.ToDisplayString(), p.Name, p.GetMethod != null, p.SetMethod != null)))) +
-                Join(System.Environment.NewLine,
+                Join("\r\n",
                     classToGenerateTheInterfaceFor
                     .GetMembers()
                     .Where(member => member.Kind is SymbolKind.Method)
@@ -80,7 +80,7 @@ public partial class EnumerationClassGenerator : IIncrementalGenerator
                         MethodDeclarationTemplate.Render(new MethodDeclarationModel(m.ReturnType.ToDisplayString(),
                             m.Name + (m.IsGenericMethod ? $"<{Join(", ", m.TypeParameters.Select(tp => tp.Name))}>" : ""),
                             Join(", ", m.Parameters.Select(p => $"{p.Type.ToDisplayString()} {p.Name}")),
-                            m.IsGenericMethod ? $"{Join(System.Environment.NewLine,
+                            m.IsGenericMethod ? $"{Join("\r\n",
                                 m.TypeParameters.Select(tp =>
                                     tp.HasReferenceTypeConstraint || tp.HasValueTypeConstraint || tp.HasConstructorConstraint || tp.ConstraintTypes.Any() ?
                                     "where " + tp.Name + " : " +
