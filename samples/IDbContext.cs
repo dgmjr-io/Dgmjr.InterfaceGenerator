@@ -12,7 +12,7 @@
 using Microsoft.EntityFrameworkCore;
 namespace Microsoft.EntityFrameworkCore.Abstractions;
 
-[GenerateInterfaceAttribute(typeof(DbContext))]
+[GenerateInterfaceAttribute(typeof(DbContext), false)]
 public partial interface IDbContext
 {
 

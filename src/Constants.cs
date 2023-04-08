@@ -40,7 +40,9 @@ public static class Constants
     {
         public Type Type { get; }
 
-        public GenerateInterfaceAttribute (Type type)
+        /// <param name="type">The type from which to create the interface(s)</param>
+        /// <param name="decompose"><see langword="true" /> if the interface should be "decomposed" into a different interface for each member and recomposed into a single interface; otherwise, <see langword="false" /> to create only a single interface.</param>
+        public GenerateInterfaceAttribute (Type type, bool decompose = false)
         {
             {
                 Type = type;
